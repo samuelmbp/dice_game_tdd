@@ -15,6 +15,6 @@ describe Player do
     end
 
     it 'should be able to roll any number of dice at the same time' do
-        expect(subject.roll_dice(3)).to be > 6
+        expect(subject.roll_dice(7)).to be > 6
     end
 end
