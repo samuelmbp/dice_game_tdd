@@ -17,4 +17,10 @@ describe Player do
     it 'should be able to roll any number of dice at the same time' do
         expect(subject.roll_dice(7)).to be > 6
     end
+
+    it 'records each dice roll' do
+        allow(subject).to receive(:rand).and_return(5)
+        subject.roll_dice
+        expect(subject.dice).to eq([5])
+    end
 end
