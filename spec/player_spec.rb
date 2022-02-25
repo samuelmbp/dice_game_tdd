@@ -23,4 +23,13 @@ describe Player do
         subject.roll_dice
         expect(subject.dice).to eq([5])
     end
+
+    it 'should respond to a method called total_score' do
+        expect(subject).to respond_to(:total_score)
+    end
+
+    it 'should should be able to return the total score' do
+        subject.roll_dice
+        expect(subject.total_score).to be > 0
+    end
 end

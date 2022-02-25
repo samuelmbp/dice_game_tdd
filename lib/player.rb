@@ -1,6 +1,6 @@
 class Player
     attr_reader :dice
-    
+
     def initialize
         @dice = []
     end
@@ -9,5 +9,9 @@ class Player
         dice_number.times do 
             @dice << rand(1..6)
         end
+    end
+
+    def total_score 
+        @dice.sum
     end
 end
