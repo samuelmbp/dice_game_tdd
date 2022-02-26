@@ -5,8 +5,11 @@ A board game with user story and TDD.
 ### How to use
 
 ```shell
-cd board_dice_game
-ruby player.rb
+cd board_dice_game/
+ruby lib/player.rb
+
+Run the tests:
+rspec spec/player_spec.rb
 ```
 
 ```shell
